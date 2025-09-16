@@ -13,22 +13,22 @@ import { ModalComponent } from '../components/modal.component';
     <h2>1) รูปภาพและข้อความแสดงแทน (ALT)</h2>
     <div class="grid cols-3 img-grid" role="group" aria-label="แกลเลอรีตัวอย่างภาพ (ภาพจากแหล่งเปิดให้ใช้ได้ฟรี)">
       <figure>
-        <img src="https://source.unsplash.com/300x200/?dog" alt="หมาเพศผู้หนึ่งตัว" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Golde33443.jpg/300px-Golde33443.jpg" alt="หมาเพศผู้หนึ่งตัว" referrerpolicy="no-referrer" loading="lazy">
       </figure>
       <figure>
-        <img src="https://source.unsplash.com/300x200/?cat" alt="แมวเพศเมียสองตัว" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/300px-Cat03.jpg" alt="แมวเพศเมียสองตัว" referrerpolicy="no-referrer" loading="lazy">
       </figure>
       <figure>
-        <img src="https://source.unsplash.com/300x200/?elephant" alt="ช้างเพศผู้ 3 ตัว" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/300px-African_Bush_Elephant.jpg" alt="ช้างเพศผู้ 3 ตัว" referrerpolicy="no-referrer" loading="lazy">
       </figure>
       <figure>
-        <img src="https://source.unsplash.com/300x200/?buffalo" alt="" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Water_buffalo_in_Vietnam.JPG/300px-Water_buffalo_in_Vietnam.JPG" alt="" referrerpolicy="no-referrer" loading="lazy">
       </figure>
       <figure style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden">
-        <img src="https://source.unsplash.com/300x200/?dog,puppy" alt="หมาเพศผู้หนึ่งตัว" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png" alt="หมาเพศผู้หนึ่งตัว" referrerpolicy="no-referrer" loading="lazy">
       </figure>
       <figure style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden">
-        <img src="https://source.unsplash.com/300x200/?cat,kitten" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png" referrerpolicy="no-referrer" loading="lazy">
       </figure>
     </div>
 
@@ -58,7 +58,7 @@ import { ModalComponent } from '../components/modal.component';
           <label for="alt-input">alt ของภาพ:</label>
           <input id="alt-input" type="text" [value]="altText" (input)="altText=($any($event.target).value)" style="width:100%; padding:6px; margin:8px 0" />
           <div style="display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap">
-            <img src="https://picsum.photos/seed/dogLive/160/120" [attr.alt]="altText" style="border-radius:6px; border:1px solid #eee">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Golde33443.jpg/160px-Golde33443.jpg" [attr.alt]="altText" style="border-radius:6px; border:1px solid #eee">
             <div style="flex:1; min-width:260px">
               <div class="muted">โค้ดก่อนแก้ (ผิด)</div>
               <pre class="code" ngNonBindable>&lt;img src="dog.jpg"&gt;</pre>
