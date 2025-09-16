@@ -1,0 +1,48 @@
+# Angular / Node
+node_modules/
+dist/
+tmp/
+out-tsc/
+.angular/
+coverage/
+
+# Environment files (optional)
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.settings/
+*.sublime-workspace
+.history/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Sass cache
+.sass-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Test & tooling artifacts
+testem.log
+libpeerconnection.log
+web-test-runner.log
+
