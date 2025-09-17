@@ -63,7 +63,7 @@ import { ModalComponent } from '../components/modal.component';
               <div class="muted">โค้ดก่อนแก้ (ผิด)</div>
               <pre class="code" ngNonBindable>&lt;img src="dog.jpg"&gt;</pre>
               <div class="muted">โค้ดหลังแก้ (ถูก)</div>
-              <pre class="code" ngNonBindable>&lt;img src="dog.jpg" alt="{{altText || 'หมาเพศผู้หนึ่งตัว'}}"&gt;</pre>
+              <pre class="code">&lt;img src="dog.jpg" alt="{{altText || ''}}"&gt;</pre>
               <p class="muted">หากภาพเป็น purely decorative ใช้ alt="" หรือ role="presentation"</p>
             </div>
           </div>
