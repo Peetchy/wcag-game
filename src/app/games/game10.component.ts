@@ -26,10 +26,10 @@ import { NgIf } from '@angular/common';
     </div>
 
     <fieldset style="margin-top:16px">
-      <legend>Q1: รูปแบบนี้ “เข้าถึงได้” หรือ “ไม่เข้าถึงได้” เมื่อไม่มีวิธีขยายเวลา</legend>
+      <legend>Q1: รูปแบบนี้ “เข้าถึงได้” หรือ “เข้าถึงไม่ได้” เมื่อไม่มีวิธีขยายเวลา</legend>
       <div class="options">
         <label class="option"><input type="radio" name="q1" (change)="answer='ok'"> เข้าถึงได้</label>
-        <label class="option"><input type="radio" name="q1" (change)="answer='not'"> ไม่เข้าถึงได้</label>
+        <label class="option"><input type="radio" name="q1" (change)="answer='not'"> เข้าถึงไม่ได้</label>
       </div>
     </fieldset>
 
@@ -101,7 +101,7 @@ export class Game10Component implements OnInit, OnDestroy {
     const correct = this.answer === 'not';
     if (correct && !this.awarded) { this.score.add(10); this.awarded=true; }
     this.message = correct ? 'ถูกต้อง: ต้องมีวิธีให้ขยายเวลาหรือปิดการจับเวลา'
-      : 'ไม่ถูกต้อง: รูปแบบนี้ไม่เข้าถึงได้เพราะไม่มีวิธีขยายเวลา';
+      : 'ไม่ถูกต้อง: รูปแบบนี้เข้าถึงไม่ได้เพราะไม่มีวิธีขยายเวลา';
     this.startDemo();
     this.show = true;
   }
